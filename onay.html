@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Onay Sayfası</title>
+</head>
+
+<body>
+    <h1>Form Verileriniz</h1>
+    <p><strong>İsim Soyisim:</strong> <span id="isim"></span></p>
+    <p><strong>Eposta:</strong> <span id="eposta"></span></p>
+    <p><strong>Seçilen Müzisyenler:</strong></p>
+    <ul id="muzisyenler"></ul>
+
+    <script>
+        // URL'den parametreleri al
+        const params = new URLSearchParams(window.location.search);
+
+        // İsim ve eposta göster
+        document.getElementById("isim").textContent = params.get("isim") || "Belirtilmedi";
+        document.getElementById("eposta").textContent = params.get("eposta") || "Belirtilmedi";
+
+        // Müzisyenler birden fazla olabilir → params.getAll()
+        const secilenler = params.getAll("muzisyen");
+        const ul = document.getElementById("muzisyenler");
+
+        if (secilenler.length === 0) {
+            ul.innerHTML = "<li>Hiçbir müzisyen seçilmedi.</li>";
+        } else {
+            secilenler.forEach(muzisyen => {
+                const li = document.createElement("li");
+                li.textContent = muzisyen;
+                ul.appendChild(li);
+            });
+        }
+    </script>
+</body>
+
+</html>
+

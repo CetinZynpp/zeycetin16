@@ -1,0 +1,429 @@
+
+
+h1{
+    font-size: 32px;
+        /* Yazı boyutu */
+        color: darkblue;
+        /* Yazı rengi */
+        font-family: Arial, sans-serif;
+        /* Yazı tipi */
+        text-align: center;
+        /* Ortalanmış metin */
+        margin-top: 20px;
+        /* Üst boşluk */
+}
+/*.div-listeler1{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #222;
+        padding: 15px 30px;
+}*/
+
+.div-listeler1 {
+    background-color: #f0f4f8;
+    padding: 12px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    margin: 30px auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* linkler arası boşluk */
+    flex-wrap: wrap;
+    /* dar alanda alt satıra geçebilir */
+}
+
+.div-listeler1 h3 {
+    flex-basis: 100%;
+    /* başlık tüm satırı kaplar */
+    text-align: center;
+    background-color: #5D8AA8;
+    color: white;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.div-listeler1 a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    /* yazı taşmasın */
+}
+
+.div-listeler1 a:hover {
+    background-color: #5D8AA8;
+    color: white;
+    box-shadow: 0 3px 6px rgba(93, 138, 168, 0.6);
+    transform: translateY(-2px);
+    transition: all 0.3s ease; }
+.resim{
+    text-align: center;
+        /* Resmi yatayda ortalar */
+        margin: 30px0; }
+
+ .resim img:hover {
+      transform: scale(1.05);
+    /* Üzerine gelince hafif büyür */
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);         }
+.cerceve{
+    border: 4px solid black;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        /* Ekran yüksekliği kadar */
+        margin: 0;
+}
+.iletisim-kutu{
+    border: 2px solid #007BFF;
+        /* Mavi çerçeve */
+        padding: 20px;
+        background-color: #f9f9f9;
+        /* Açık gri arka plan */
+        border-radius: 8px;
+        /* Köşeleri yumuşat */
+        max-width: 400px;
+        margin: 20px auto;
+        /* Ortala */
+        font-family: Arial, sans-serif;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Hafif gölge */
+}
+
+.fotograflar{
+    border-radius: 20px;
+}
+img {
+    border-radius: 15px;
+    /* Kenarları yumuşatır */
+    transition: 0.3s ease;
+    /* Geçişli görünüm için (isteğe bağlı) */ }
+    img:hover {
+        transform: scale(1.05);
+            /* Üzerine gelince hafif büyür */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+   
+   .sirket-hakkımızda{
+    border: 2px solid #007BFF;
+        /* Mavi çerçeve */
+        padding: 20px;
+        background-color: #f9f9f9;
+        /* Açık gri arka plan */
+        border-radius: 8px;
+        /* Köşeleri yumuşat */
+       
+        font-family: Arial, sans-serif;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Hafif gölge */
+   }
+   /* .muzisyen-kutu{
+        border: 2px solid #007BFF;
+            padding: 20px;
+            width: 600px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            max-width: 400px;
+                margin: 20px auto;
+                /* Ortala */
+    
+                .muzisyen-kutu {
+                        max-width: 480px;
+                        margin: 40px auto;
+                        background-color: #f0f4f8;
+                        /* açık, ferah bir arka plan */
+                        padding: 30px 25px;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color: #2c3e50;
+                    }
+                
+                    .muzisyen-kutu h3 {
+                        text-align: center;
+                        margin-bottom: 30px;
+                        color: #5D8AA8;
+                        /* kırık mavi */
+                        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+                    }
+                
+                    .muzisyen-kutu form p {
+                        margin-bottom: 20px;
+                    }
+                
+                    .muzisyen-kutu label {
+                        display: block;
+                        font-weight: 600;
+                        margin-bottom: 6px;
+                        font-size: 1rem;
+                        color: #34495e;
+                    }
+                
+                    .muzisyen-kutu input[type="text"],
+                    .muzisyen-kutu input[type="email"] {
+                        width: 100%;
+                        padding: 10px 12px;
+                        border: 1.8px solid #bdd7f7;
+                        border-radius: 6px;
+                        font-size: 1rem;
+                        transition: border-color 0.3s ease;
+                    }
+                
+                    .muzisyen-kutu input[type="text"]:focus,
+                    .muzisyen-kutu input[type="email"]:focus {
+                        border-color: #5D8AA8;
+                        outline: none;
+                        box-shadow: 0 0 6px rgba(93, 138, 168, 0.5);
+                    }
+                
+                    .muzisyen-kutu fieldset {
+                        border: 1px solid #ccddee;
+                        border-radius: 8px;
+                        padding: 15px 20px;
+                        margin-bottom: 25px;
+                    }
+                
+                    .muzisyen-kutu legend {
+                        font-weight: 700;
+                        color: #5D8AA8;
+                        font-size: 1.1rem;
+                        padding: 0 8px;
+                    }
+                
+                    .muzisyen-kutu input[type="checkbox"] {
+                        margin-right: 10px;
+                        width: 18px;
+                        height: 18px;
+                        cursor: pointer;
+                        vertical-align: middle;
+                    }
+                
+                    .muzisyen-kutu p label {
+                        cursor: pointer;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        color: #2c3e50;
+                    }
+                
+                    .muzisyen-kutu input[type="submit"] {
+                        display: block;
+                        width: 100%;
+                        padding: 14px;
+                        background-color: #5D8AA8;
+                        border: none;
+                        border-radius: 30px;
+                        color: white;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease, transform 0.3s ease;
+                        box-shadow: 0 5px 12px rgba(93, 138, 168, 0.6);
+                    }
+                
+                    .muzisyen-kutu input[type="submit"]:hover {
+                        background-color: #486d8f;
+                        transform: scale(1.05);
+                        box-shadow: 0 7px 14px rgba(72, 109, 143, 0.7);                 }
+
+
+
+        h3 {
+            color: #0077cc;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;}
+        ol {
+             background-color: #f8f9fa;
+        padding: 20px;
+         border: 2px solid #ccc;
+         border-radius: 12px;
+        max-width: 700px;
+        margin: 20px auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);}
+     li a { /* linklerin altındaki çizgileri kadırdık*/
+       text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease, font-weight 0.3s ease;         }
+        li a:hover { /* linklerin üstüne tıkayınca büyüyor*/
+        color: #0077cc;
+        font-weight: bold;         }
+                h2 {
+                    text-align: center;
+                    color: #0077cc;
+                    font-family: 'Segoe UI', sans-serif;
+                    margin-bottom: 20px;
+                }
+        
+                /* Tablo genel stil */
+                table {
+                    width: 90%;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    border-collapse: collapse;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    overflow: hidden;
+                    font-family: Arial, sans-serif;
+                }
+        
+                /* Tablo başlık satırı */
+                table th {
+                    background-color: #0077cc;
+                    color: white;
+                    padding: 12px 15px;
+                    text-align: left;
+                    font-weight: bold;
+                }
+        
+                /* Tablo veri hücreleri */
+                table td,
+                table th {
+                    border: 1px solid #ddd;
+                    padding: 12px 15px;
+                }
+        
+                /* Satır arası renk farkı */
+                table tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+        
+                /* Üzerine gelince efekt */
+                table tr:hover {
+                    background-color: #e0f0ff;
+                    transition: 0.3s ease;         }
+         .yeni-grup {
+              max-width: 900px;
+             margin: 40px auto;
+             padding: 25px;
+             background-color: #fdfdfd;
+            border: 2px solid #ddd;
+             border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;          }
+            .uyeler{
+                max-width: 800px;
+                    margin: 40px auto;
+                    padding: 20px;
+                    font-family: 'Segoe UI', sans-serif;  color: #333;
+            }
+            .manifest-fotograf{
+                width: 90%;
+                    max-width: 800px;
+                    height: auto;
+                    border-radius: 15px;
+                    /* Kenarları yumuşat */
+                    border: 5px solid #cc0000;
+                    /* Canlı bir çerçeve */
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+                    /* Gölge */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    text-align: center;
+                        /* İçeriği ortalamak için */margin: 40px auto;
+            }
+                        body {
+                            background-color: #f0f8ff;
+                            /* Açık mavi ton – istediğin rengi buraya yazabilirsin */
+                            margin: 0;
+                            padding: 0;
+                            font-family: Arial, sans-serif;             }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #f4f4f4;
+}
+
+.options button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: #2e2e3f;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #0077cc;
+     box-shadow: 0 0 10px ;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.answer-btn:hover {
+    background-color: #7b68ee;
+}
+
+#next-btn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00bfff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #90ee90; }
+
+    .quiz-oyun{
+        border: 2px solid #007BFF;
+            /* Mavi çerçeve */
+            padding: 20px;
+            background-color: #f9f9f9;
+            /* Açık gri arka plan */
+            border-radius: 8px;
+            /* Köşeleri yumuşat */
+            max-width: 400px;
+            margin: 20px auto;
+            /* Ortala */
+            font-family: Arial, sans-serif;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif gölge */
+    }
